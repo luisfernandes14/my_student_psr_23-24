@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 
-maximum_number = 10
-
-
+maximum_number = 10000
+#usar aqui ./test.py | grep "is prime" | wc -l, para descobrir quantos numeros primos tem até 10000
 def isPrime(value):
     for i in range(2,value):
         if value%i == 0:
-            print("The number " + str(value) + "is not prime because we can divide by"+ str(i))
+            #print("The number " + str(value) + " is not prime because we can divide by "+ str(i))
             return False
+    return True
     
 
 def main():
